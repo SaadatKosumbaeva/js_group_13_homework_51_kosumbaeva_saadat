@@ -1,1 +1,11 @@
-<p>gallery works!</p>
+<h1 class="gallery-header">Gallery</h1>
+
+<form (submit)="showGalleryForm($event)">
+  <div class="password-form">
+    <label><input name="password" [(ngModel)]="password" placeholder="password" class="input"/></label>
+    <button [disabled]="passwordInputIsEmpty()" class="password-btn btn">Open form</button>
+  </div>
+</form>
+
+
+

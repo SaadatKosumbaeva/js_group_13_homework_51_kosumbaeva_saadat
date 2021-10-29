@@ -1,0 +1,24 @@
+.gallery-header {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin: 0 0 20px 0;
+}
+
+.password-form {
+  margin: 0 0 10px 0;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.password-btn {
+  margin-left: 20px;
+}
+
+.input {
+  padding: 10px 5px;
+  margin: 0 0 10px 15px;
+}
+

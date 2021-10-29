@@ -6,6 +6,7 @@ import { NumberComponent } from './number/number.component';
 import { GeneratorComponent } from './generator/generator.component';
 import { ImageComponent } from './image/image.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -15,9 +16,10 @@ import { GalleryComponent } from './gallery/gallery.component';
     ImageComponent,
     GalleryComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
