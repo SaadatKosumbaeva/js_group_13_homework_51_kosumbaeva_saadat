@@ -7,6 +7,8 @@ import {Component} from '@angular/core';
 })
 export class GalleryComponent {
   password = '';
+  imageTitle = '';
+  imageURL = '';
   showForm = false;
   imagesArray = [
     {imageTitle: 'Image 1', imageURL: 'https://wallpaperaccess.com/full/2817799.jpg'},
@@ -38,5 +40,26 @@ export class GalleryComponent {
       alert('Incorrect password')
     }
     this.passwordReset();
+  }
+
+  imageInputIsEmpty() {
+    return this.imageTitle === '' && this.imageURL === '';
+  }
+
+  imageFormReset() {
+    this.imageTitle = '';
+    this.imageURL = '';
+  }
+
+  addImage(event: Event) {
+    event.preventDefault();
+    if (this.imageTitle === '' || this.imageURL === '') {
+      return alert('Fill in the form fields');
+    }
+    this.imagesArray.push({
+      imageTitle: this.imageTitle,
+      imageURL: this.imageURL
+    });
+    this.imageFormReset();
   }
 }

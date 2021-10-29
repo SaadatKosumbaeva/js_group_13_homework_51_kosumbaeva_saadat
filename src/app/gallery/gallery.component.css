@@ -25,3 +25,17 @@
 .gallery-block {
   padding: 22px 30px;
 }
+
+.image-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image-form-input {
+  margin-bottom: 10px;
+}
+
+.image-btn {
+  margin: 0 0 10px 15px;
+}

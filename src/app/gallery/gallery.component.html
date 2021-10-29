@@ -7,7 +7,17 @@
   </div>
 </form>
 
+<form *ngIf="showForm" (submit)="addImage($event)">
+  <div class="image-form">
+    <label><input name="imageTitle" [(ngModel)]="imageTitle" placeholder="Image title" class="image-form-input input"/></label>
+    <label><input name="imageUrl" [(ngModel)]="imageURL" placeholder="Image URL"
+                  class="image-form-input input"/></label>
+    <button [disabled]="imageInputIsEmpty()" class="image-btn btn">Add image</button>
+  </div>
+</form>
+
 <hr/>
+
 <div class="gallery-block">
   <app-image *ngFor="let image of imagesArray" [URL]="image.imageURL" [title]="image.imageTitle"></app-image>
 </div>
