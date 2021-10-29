@@ -8,6 +8,17 @@ import {Component} from '@angular/core';
 export class GalleryComponent {
   password = '';
   showForm = false;
+  imagesArray = [
+    {imageTitle: 'Image 1', imageURL: 'https://wallpaperaccess.com/full/2817799.jpg'},
+    {
+      imageTitle: 'Image 2',
+      imageURL: 'https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.2.2098224274.1628553600'
+    },
+    {
+      imageTitle: 'Image 3',
+      imageURL: 'https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/Zugpsitze_mountain.jpg?crop=0,176,3008,1654&wid=4000&hei=2200&scl=0.752'
+    }
+  ];
 
   passwordInputIsEmpty() {
     return this.password === '';
