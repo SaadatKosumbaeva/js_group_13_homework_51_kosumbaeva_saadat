@@ -1,1 +1,8 @@
-<p>generator works!</p>
+<div class="numbers-block">
+  <button (click)="generateNumbers()" class="btn number-btn">New numbers</button>
+  <div>
+    <app-number *ngFor="let number of numbers"
+                [number]="number"
+    ></app-number>
+  </div>
+</div>
